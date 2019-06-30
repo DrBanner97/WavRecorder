@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/start_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Start"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/start_button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/stop_button1"
+        />
+
+    <Button
+        android:id="@+id/stop_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Stop"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/start_button2"
+        app:layout_constraintEnd_toStartOf="@id/play_button1"
+        app:layout_constraintStart_toEndOf="@id/start_button1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/play_button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Play"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/start_button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stop_button1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/start_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:enabled="false"
+        android:text="Start"
+        app:layout_constraintBottom_toTopOf="@id/start_button3"
+        app:layout_constraintEnd_toStartOf="@id/stop_button2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_button1" />
+
+    <Button
+        android:id="@+id/stop_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Stop"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/start_button3"
+        app:layout_constraintEnd_toStartOf="@id/play_button2"
+        app:layout_constraintStart_toEndOf="@id/start_button2"
+        app:layout_constraintTop_toBottomOf="@id/start_button1"/>
+
+    <Button
+        android:id="@+id/play_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Play"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/start_button3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stop_button2"
+        app:layout_constraintTop_toBottomOf="@id/start_button1" />
+
+    <Button
+        android:id="@+id/start_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:enabled="false"
+        android:text="Start"
+        app:layout_constraintBottom_toTopOf="@id/start_button4"
+        app:layout_constraintEnd_toStartOf="@id/stop_button3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_button2" />
+
+    <Button
+        android:id="@+id/stop_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Stop"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/start_button4"
+        app:layout_constraintEnd_toStartOf="@id/play_button3"
+        app:layout_constraintStart_toEndOf="@id/start_button3"
+        app:layout_constraintTop_toBottomOf="@id/start_button2"/>
+
+    <Button
+        android:id="@+id/play_button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Play"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/start_button4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stop_button3"
+        app:layout_constraintTop_toBottomOf="@id/start_button2" />
+
+
+
+    <Button
+        android:id="@+id/start_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
+        android:enabled="false"
+        android:text="Start"
+        app:layout_constraintBottom_toTopOf="@id/save_button"
+        app:layout_constraintEnd_toStartOf="@id/stop_button4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/start_button3" />
+
+    <Button
+        android:id="@+id/stop_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Stop"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/save_button"
+        app:layout_constraintEnd_toStartOf="@id/play_button4"
+        app:layout_constraintStart_toEndOf="@id/start_button4"
+        app:layout_constraintTop_toBottomOf="@id/start_button3"/>
+
+    <Button
+        android:id="@+id/play_button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Play"
+        android:enabled="false"
+        app:layout_constraintBottom_toTopOf="@id/save_button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/stop_button4"
+        app:layout_constraintTop_toBottomOf="@id/start_button3" />
+
+
+    <Button
+        android:id="@+id/save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="SAVE"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/start_button4" />
+
+
+
+
+</android.support.constraint.ConstraintLayout>
