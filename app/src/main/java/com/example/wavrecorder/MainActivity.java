@@ -130,6 +130,7 @@ public class MainActivity extends AppCompatActivity {
             viewList.get(i).getStart().setEnabled(true);
             viewList.get(i).getStop().setEnabled(false);
         }
+        saveButton.setEnabled(true);
     }
 
 
@@ -412,6 +413,8 @@ public class MainActivity extends AppCompatActivity {
             enablePlayButtons();
 
         } catch (FileNotFoundException e) {
+            Toast.makeText(this,"Press Start to record files",Toast.LENGTH_SHORT).show();
+
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
@@ -424,14 +427,23 @@ public class MainActivity extends AppCompatActivity {
     private void enablePlayButtons(){
         for (int i=0;i<viewList.size();i++){
             viewList.get(i).getPlay().setEnabled(true);
+            viewList.get(i).getStart().setEnabled(true);
+
         }
+        saveButton.setEnabled(true);
     }
+
 
     private void disablePlayButton(){
         for (int i=0;i<viewList.size();i++){
             viewList.get(i).getPlay().setEnabled(false);
+            viewList.get(i).getStart().setEnabled(false);
+
         }
+        saveButton.setEnabled(false);
+
     }
+
 
 
     public void playLastFile(int index){
